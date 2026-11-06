@@ -1,6 +1,6 @@
 MA429 Assignment
 
-Short notes on how I solved each problem. All solutions are in C++ (compiled with g++ -O2, C++17).
+Short notes on how I solved each problem
 
 P1 - Password
 Taking the difference array of the bit string, every flip of length a only changes two positions (i and i+a). So the problem becomes: pair up the positions where the difference array is 1, and the cost of a pair is the shortest number of moves between them. I ran BFS from each of those positions (there are at most 20 of them since k <= 10) to get pairwise distances, then did a bitmask DP to find the cheapest perfect matching. If no matching works the answer is -1.
