@@ -1,4 +1,4 @@
-# MA429 Assignment - approach notes
+# MA429 Assignment
 
 Short notes on how I solved each problem. All solutions are in C++ (compiled with g++ -O2, C++17).
 
